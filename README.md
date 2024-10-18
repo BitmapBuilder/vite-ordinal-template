@@ -1,9 +1,9 @@
 # vite-ordinal-template
 
-a simple React + React-Three-Fiber workflow for making ordinal inscriptions
+a simple Vite + React-Three-Fiber workflow for making ordinal inscriptions
 
 
-## local development
+## how to use
 
 1. install
 
