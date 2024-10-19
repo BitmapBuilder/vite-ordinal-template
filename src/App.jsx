@@ -1,13 +1,12 @@
 import {Canvas} from "@react-three/fiber";
+import {Suspense} from "react";
+import {Perf} from "r3f-perf";
 import {EnvironmentLighting} from "./components/core/EnvironmentLighting.jsx";
 import {Cam} from "./components/core/Cam.jsx";
 import {Effects} from "./components/core/Effects.jsx";
-import {useStore} from "statery";
-import {guiStore} from "./modules/stores.mjs";
-import {Fragment, Suspense} from "react";
 import {TestComponent} from "./components/TestComponent.jsx";
 
-import {Stats} from '@react-three/drei'
+import {GUI} from "/content/c0decdf406f2354d61b1c95be08c8d5c067f1c31371c9bf433949391c8421ba8i0";
 
 
 const Scene = () => {
@@ -31,24 +30,11 @@ const Scene = () => {
                 <EnvironmentLighting/>
                 <Cam/>
                 <Effects/>
-                <Stats />
+                <Perf />
 
                 <TestComponent/>
             </Suspense>
         </Canvas>
-    )
-}
-
-const GUI = () => {
-
-    const {gui} = useStore(guiStore);
-
-    return (
-        <div className={'absolute top-0 left-0 z-50'}>
-            {gui.map(({key, element}) => (
-                <Fragment key={key}>{element}</Fragment>
-            ))}
-        </div>
     )
 }
 
