@@ -1,9 +1,9 @@
 # vite-ordinal-template
 
-a simple Vite + React-Three-Fiber workflow for making ordinal inscriptions
+a `Vite` + `React` + `TailwindCSS` + `R3F` + `Composer Suite` workflow for making ordinal inscriptions, which are apps inlined into a single HTML file, using recursive endpoints like `/content/` and `/r/blockinfo` from ord servers (https://github.com/ordinals/ord)
 
 
-## how to use
+## local development
 
 1. install
 
@@ -23,6 +23,6 @@ a simple Vite + React-Three-Fiber workflow for making ordinal inscriptions
 or
 `yarn build`
 
-your app will be fully bundled into a single HTML file inside the `dist` folder
+your app will be fully bundled into a single HTML file inside the `build` folder
 
 test here: https://ordinals.com/inscription/33633842
