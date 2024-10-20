@@ -1,12 +1,16 @@
 {
-  "name": "gladion_vite_2",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vite-ordinal-template",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "inscriptions": {
+    "boxelGeometry": "/content/c0decdd785a4cfb37a4fce01f62386dec5be5e91a27bf09d121167e473b3cc9fi0",
+    "useGUI": "/content/c0decdf406f2354d61b1c95be08c8d5c067f1c31371c9bf433949391c8421ba8i0",
+    "GridFloor": "/content/c0ded73640f3a5094b2ebf32d18625005a00271cd42ee7fa62f6c6f61f97bbc3i0"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
