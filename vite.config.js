@@ -143,6 +143,9 @@ export default defineConfig(({ command }) => {
             sourcemap: false,
             rollupOptions: {
                 external: Object.keys(externalModules).concat([
+                    'boxelGeometry',
+                    'boxels-shader',
+                    'GridFloor',
                     'three',
                     'react',
                     'react-dom',
